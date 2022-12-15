@@ -14,6 +14,8 @@ Unfortunately, every good tool is prone to abuse and misuse. The word “misuse�
 
 The data we acquired comes from the platform “YouTube”, a free video-sharing social network. Data from 2005 until 2019 was extracted and further compiled into a dataset called “YouNiverse”. This dataset provides us with the metadata on videos that are in English, uploaded by anonymous users worldwide.
 
+![Graph1](https://miro.medium.com/max/1400/0*BycpvfkrDSNiUVKc){: .mx-auto.d-block :}
+
 
 ## Research question 
 
@@ -60,5 +62,6 @@ In our final analysis, we will now investigate if
 
 To conclude, tags are really useful ;)
 
-![Crepe](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/640px-Donald_Trump_official_portrait.jpg){: .mx-auto.d-block :}
+![Trump](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/640px-Donald_Trump_official_portrait.jpg){: .mx-auto.d-block :}
+
 
