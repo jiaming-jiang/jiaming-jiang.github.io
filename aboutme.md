@@ -1,13 +1,29 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About us
+subtitle: Why should you know us deeper than what you've just read ?
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Germain
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Loves the piano
+- Loves asian food
+
+Iman 
+
+- Loves to eat have dinner at 3 p.m.
+- Loves to tell stories to people
+
+Berkay 
+
+- Loves vegan chips
+- Loves to work with Elif
+
+
+Elif
+
+- Loves sugar free biscuits
+- Loves to work with Berkay
 
 What else do you need?
 
