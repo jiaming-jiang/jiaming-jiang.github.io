@@ -22,10 +22,7 @@ author: Germain, Elif, Berkay & Iman
 navbar-links:
   About Us: "aboutus"
   Resources:
-    - Project info page : "https://dlab.epfl.ch/teaching/fall2022/cs401/projects/"
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Repository: "https://github.com/Germouche/germouche.github.io"
+    - Repository: "https://github.com/Germouche/germouche.github.io"
 
 ################
 # --- Logo --- #
