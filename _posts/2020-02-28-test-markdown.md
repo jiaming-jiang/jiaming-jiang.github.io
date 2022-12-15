@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Trends on Tags - in the world of Tags
 subtitle: YouTube videos
 cover-img: /assets/img/earth.png
