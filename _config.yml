@@ -22,6 +22,7 @@ author: Germain, Elif, Berkay & Iman
 navbar-links:
   ada project: "stuckoverflow"
   Resources:
+    - Dataset: "https://github.com/epfl-dlab/YouNiverse"
     - Repository: "https://github.com/Germouche/germouche.github.io"
 
 ################
