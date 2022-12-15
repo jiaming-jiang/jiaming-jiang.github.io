@@ -21,6 +21,7 @@ author: Germain, Elif, Berkay & Iman
 
 navbar-links:
   About Us: "aboutus"
+  ada project: "stuckoverflow"
   Resources:
     - Repository: "https://github.com/Germouche/germouche.github.io"
 
