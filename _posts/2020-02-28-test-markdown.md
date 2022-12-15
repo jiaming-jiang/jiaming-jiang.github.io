@@ -26,6 +26,11 @@ Here are some interesting questions we’ll dive into:
 - Do people misuse video tags on unrelated video categories to exploit trending topics?
 
 
+![Graph2](https://www.home-assistant.io/images/dashboards/statistics_graph_bar.png
+){: .mx-auto.d-block :}
+
+
+
 ## How do tags evolve and die?
 
 The first analyses revolve around observing the trajectories of tags. The statistics from OBERLO shows that there are 500 hours of videos uploaded to YouTube. Every. Single. Minute. This indirectly indicates that there might be thousands of tags and its varieties being used. We first look at the trajectories of these tags.
@@ -56,6 +61,8 @@ By using centrality analysis, we can:
 ## Do people misuse video tags on unrelated video categories to exploit trending topics?
 
 In our final analysis, we will now investigate if 
+
+![Trump](https://visme.co/blog/wp-content/uploads/2017/07/Pie-Charts.jpg){: .mx-auto.d-block :}
 
 
 ## Conclusion & Implication
