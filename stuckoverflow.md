@@ -85,7 +85,7 @@ Here are the tags with the highest ratio, with our approach:
 
 *The selection of threshold affects the number of related tags found, for our analysis, we wanted to focus on precision and be sure on suspecting a video as misuse.*
 
-These tags represent the words that are tend to be used with our tag of interest, using these tags, we check if we can find misused examples on other categories. For each category other than "News & Politics", we extract all videos tagged with **trump** and check if they include these keywords. Number of videos including these tags among videos tagged with *trump* can be found below: 
+These tags represent the words that are tend to be used with our tag of interest, using these tags, we check if we can find misused examples on other categories. For each category other than "News & Politics", we extract all videos tagged with **trump** in the 5 month timeframe between September 2016 and January 2017. This timeframe includes the trend date November 2016 in the middle, which is also the election date.We then check if these videos include related keywords found above. Number of videos including these tags among videos tagged with *trump* can be found below: 
 
 <div class="row">
   <div class="col-md-6" markdown="1">
@@ -122,6 +122,18 @@ These tags represent the words that are tend to be used with our tag of interest
 </div>
 
 To check if the videos that do not contain these videos are misused, we sample 0.2% of the videos tagged with **trump** and manually check if the usage of the tag is appropriate.
+
+Given **596** randomly selected videos, we labeled them as either *Misuse*, *Related* or *N/A*. Videos were deleted or that were not in English were labeled as *N/A*.
+Results for each category can be seen on the following charts:
+
+{% include misuse_pie.html %}
+
+Among all randomly selected videos **58.9%**were labeled as misuse, **19.5%** as related and **21.6%** as *N/A*. If we exclude *N/A*, **75.1%** of the videos are misuse. 
+The categories that had the most misuse are: **Sports** with **84.5%** .... WRITE MORE
+
+
+We then check how the percentage of the misuse change with time. 
+{% include timeline.html %}
 
 
 ## Conclusion & Implication
