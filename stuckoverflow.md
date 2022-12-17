@@ -60,9 +60,68 @@ By using centrality analysis, we can:
 
 ## Do people misuse video tags on unrelated video categories to exploit trending topics?
 
-In our final analysis, we will now investigate if 
 
-![Trump](https://visme.co/blog/wp-content/uploads/2017/07/Pie-Charts.jpg){: .mx-auto.d-block :}
+
+To find the most related tags among the *13321* tags that were used together on 2016 November, we calculate a *pmi-like* calculation without considering the usage of tag **trump** given it is equal among all tags. With the filtering approach explained below, we reduce the number of related tags to **176**.
+Here are the tags with the highest ratio, with our approach:
+
+<div class="row">
+<div class="col-md-6" markdown="1">
+  {% include trump_related_tags.html %}
+</div>
+
+<div class="col-md-6" markdown="1">
+  To calculate the ratio:
+  <ul>
+    <li>We filter out the tags whose usage is less than 90% of the population. With this approach, we only get tags that are used by many people on many videos.</li>
+    <li>For each tag we find the number of videos it is used. <i>num_used</i> </li>
+    <li>For each tag we find the number of videos it is used with the tag <b>"trump"</b>,  <i>num_used_trump</i>. </li>
+    <li><i>Ratio</i> = <i>num_used_trump</i> / <i>num_used</i> * 100</li>
+    <li>We take the tags with length>2 and with ratio>0.5</li>
+</ul>
+  
+</div>
+</div>
+
+*The selection of threshold affects the number of related tags found, for our analysis, we wanted to focus on precision and be sure on suspecting a video as misuse.*
+
+These tags represent the words that are tend to be used with our tag of interest, using these tags, we check if we can find misused examples on other categories. For each category other than "News & Politics", we extract all videos tagged with **trump** and check if they include these keywords. Number of videos including these tags among videos tagged with *trump* can be found below: 
+
+<div class="row">
+  <div class="col-md-6" markdown="1">
+  {% include trump_misuse_chart.html %}
+  </div>
+  <div class="col-md-6"  markdown="1">
+  <div style="overflow-y:scroll;height:40%;">
+    <h4>With Tag Trump</h4>
+    <ul>
+    <li>URGENT: OBAMA JUST STARTED NEW COLD WAR WITH RUSSIA! THIS IS REALLY BAD</li>
+    <li>10 McDonald's Happy Meals Challenge</li>
+    <li>Why a 1000 x TRUMP and not HILLARY</li>
+    </ul>
+    <h4>Related Tags in Title</h4>
+    <ul>
+    <li>Meet Up Details / Feelings about New President!</li>
+    <li>An Event in the Life of: Election Day - Trump Supporter?</li>
+    <li>Go Vote! 30% - 40% of Gun Owners Don't Vote (VOTE FOR ME!)</li>
+    </ul>
+    <h4>Related Tags not in Title</h4>
+    <ul>
+    <li>Tackle-Buster Gator Bluefish!</li>
+    <li>JUJU ON THAT BEAT CHALLENGE!</li>
+    <li>REMOVED From Web! UFO Fleet Over Mexico Border 1/26/17</li>
+    </ul>
+    <h4>Trump in Title</h4>
+    <ul>
+    <li>Donald Trump Calls Indian Tech Support Scammers</li>
+    <li>Is Donald Trump the Republican Party's New Christ?</li>
+    <li>Donald Trump vs Hillary Clinton. Epic Rap Battles of History | REACTION!!!</li>
+    </ul>
+ </div>
+  </div>
+</div>
+
+To check if the videos that do not contain these videos are misused, we sample 0.2% of the videos tagged with **trump** and manually check if the usage of the tag is appropriate.
 
 
 ## Conclusion & Implication
