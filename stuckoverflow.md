@@ -82,17 +82,18 @@ Here are the tags with the highest ratio, with our approach:
   
 </div>
 </div>
-
+*We selected tags in 90% to eliminate tags not used in multiple videos. Assuming people who misuse tags also use other irrelevant tags, with this approach we eliminate those if many people do not use the same tag pair together. This is also helpful to not include tags with typos.*
 *The selection of threshold affects the number of related tags found, for our analysis, we wanted to focus on precision and be sure on suspecting a video as misuse.*
+
 
 These tags represent the words that are tend to be used with our tag of interest, using these tags, we check if we can find misused examples on other categories. For each category other than "News & Politics", we extract all videos tagged with **trump** in the 5 month timeframe between September 2016 and January 2017. This timeframe includes the trend date November 2016 in the middle, which is also the election date.We then check if these videos include related keywords found above. Number of videos including these tags among videos tagged with *trump* can be found below: 
 
-<div class="row">
+<div class="row" style="max-height: 40%">
   <div class="col-md-6" markdown="1">
   {% include trump_misuse_chart.html %}
   </div>
-  <div class="col-md-6"  markdown="1">
-  <div style="overflow-y:scroll;height:40%;">
+  <div class="col-md-6 overflow-auto" markdown="1" >
+  <div>
     <h4>With Tag Trump</h4>
     <ul>
     <li>URGENT: OBAMA JUST STARTED NEW COLD WAR WITH RUSSIA! THIS IS REALLY BAD</li>
@@ -117,11 +118,11 @@ These tags represent the words that are tend to be used with our tag of interest
     <li>Is Donald Trump the Republican Party's New Christ?</li>
     <li>Donald Trump vs Hillary Clinton. Epic Rap Battles of History | REACTION!!!</li>
     </ul>
- </div>
+</div>
   </div>
 </div>
 
-To check if the videos that do not contain these videos are misused, we sample 0.2% of the videos tagged with **trump** and manually check if the usage of the tag is appropriate.
+To check if the videos that do not contain these videos are misused, we sample 20% of the videos tagged with **trump** and manually check if the usage of the tag is appropriate.
 
 Given **596** randomly selected videos, we labeled them as either *Misuse*, *Related* or *N/A*. Videos were deleted or that were not in English were labeled as *N/A*.
 Results for each category can be seen on the following charts:
@@ -131,9 +132,23 @@ Results for each category can be seen on the following charts:
 Among all randomly selected videos **58.9%**were labeled as misuse, **19.5%** as related and **21.6%** as *N/A*. If we exclude *N/A*, **75.1%** of the videos are misuse. 
 The categories that had the most misuse are: **Sports** with **84.5%** .... WRITE MORE
 
+One may think these are small channels, we saw that even official Mercedes F1 team is misusing the tag *trump* in several videos. This video uses the tag *trump* with other misused tag such as *"christmas"* (video was published in December):
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4p0c2O6tqgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 We then check how the percentage of the misuse change with time. 
 {% include timeline.html %}
+
+We now test this approach on different tags. World cup is an internationally popular event. Let's check if we can find misuse examples. 
+We sample videos with the above approach and here are some random videos that our approach labels as misuse:
+
+{% include world_cup_examples.html %}
+
+Some short manual inspection shows that most of the titles are unrelated. But there are also titles we mislabel. Even though it did not come home, video with title **"IT'S COMING HOME !!!!!! (Runescape Song)"** tricked us.
+
+Limitations of this approach:
+- We may be falsely labeling the videos as relevant, even though they are misuse. If you are talking about Mc Donald's, feel free to use the tag *"trump"*.
+- There are hyperparameters such as *percentile* and *threshold*. Since manual labeling was needed, we did not explore so many values, but this can also effect the final result.
+
 
 
 ## Conclusion & Implication
