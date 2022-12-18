@@ -30,6 +30,9 @@ Here are some interesting questions we’ll dive into:
 ){: .mx-auto.d-block :}
 
 
+{% include tag_counts.html %}
+{% include tag_count_timeline.html %}
+
 
 ## How do tags evolve and die?
 
