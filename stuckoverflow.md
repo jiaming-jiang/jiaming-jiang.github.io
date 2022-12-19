@@ -26,9 +26,6 @@ Here are some interesting questions we’ll dive into:
 - Do people misuse video tags on unrelated video categories to exploit trending topics?
 
 
-![Graph2](https://www.home-assistant.io/images/dashboards/statistics_graph_bar.png
-){: .mx-auto.d-block :}
-
 
 {% include tag_counts.html %}
 {% include tag_count_timeline.html %}
@@ -158,6 +155,5 @@ Limitations of this approach:
 
 To conclude, tags are really useful ;)
 
-![Trump](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/640px-Donald_Trump_official_portrait.jpg){: .mx-auto.d-block :}
 
 
