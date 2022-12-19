@@ -14,9 +14,6 @@ Unfortunately, every good tool is prone to abuse and misuse. The word “misuse�
 
 The data we acquired comes from the platform “YouTube”, a free video-sharing social network. Data from 2005 until 2019 was extracted and further compiled into a dataset called “YouNiverse”. This dataset provides us with the metadata on videos that are in English, uploaded by anonymous users worldwide.
 
-![Graph1](https://miro.medium.com/max/1400/0*BycpvfkrDSNiUVKc){: .mx-auto.d-block :}
-
-
 ## Research question 
 
 Intuitively, we all know that popular tags are indeed being misused to amplify the audience. But what type of tags are most likely to be abused? Do these tags tend to be trendy for a long time? Our goal here is to not only detect the abuse of tags, but also to observe the trajectories of tags. 
