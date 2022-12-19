@@ -86,7 +86,7 @@ Here are the tags with the highest ratio, with our approach: </div>
 *The selection of threshold affects the number of related tags found, for our analysis, we wanted to focus on precision and be sure on suspecting a video as misuse.*
 
 
-These tags represent the words that are tend to be used with our tag of interest, using these tags, we check if we can find misused examples on other categories. For each category other than "News & Politics", we extract all videos tagged with **trump** in the 5 month timeframe between September 2016 and January 2017. This timeframe includes the trend date November 2016 in the middle, which is also the election date.We then check if these videos include related keywords found above. Number of videos including these tags among videos tagged with *trump* can be found below: 
+<div style="text-align: justify"> These tags represent the words that are tend to be used with our tag of interest, using these tags, we check if we can find misused examples on other categories. For each category other than "News & Politics", we extract all videos tagged with **trump** in the 5 month timeframe between September 2016 and January 2017. This timeframe includes the trend date November 2016 in the middle, which is also the election date.We then check if these videos include related keywords found above. Number of videos including these tags among videos tagged with *trump* can be found below: </div>
 
 <div class="row" style="max-height: 40%">
   <div class="col-md-6" markdown="1">
