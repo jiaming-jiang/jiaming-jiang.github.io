@@ -138,12 +138,12 @@ One may think these are small channels, we saw that even official Mercedes F1 te
 We then check how the percentage of the misuse change with time. 
 {% include timeline.html %}
 
-We now test this approach on different tags. World cup is an internationally popular event. Let's check if we can find misuse examples. 
-We sample videos with the above approach and here are some random videos that our approach labels as misuse:
+<div style="text-align: justify"> We now test this approach on different tags. World cup is an internationally popular event. Let's check if we can find misuse examples. 
+We sample videos with the above approach and here are some random videos that our approach labels as misuse: </div>
 
 {% include world_cup_examples.html %}
 
-Some short manual inspection shows that most of the titles are unrelated. But there are also titles we mislabel. Even though it did not come home, video with title **"IT'S COMING HOME !!!!!! (Runescape Song)"** tricked us.
+<div style="text-align: justify"> Some short manual inspection shows that most of the titles are unrelated. But there are also titles we mislabel. Even though it did not come home, video with title **"IT'S COMING HOME !!!!!! (Runescape Song)"** tricked us. </div>
 
 Limitations of this approach:
 - We may be falsely labeling the videos as relevant, even though they are misuse. If you are talking about Mc Donald's, feel free to use the tag *"trump"*.
