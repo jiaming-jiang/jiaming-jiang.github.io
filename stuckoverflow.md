@@ -13,11 +13,12 @@ Unfortunately, every good tool is prone to abuse and misuse. The word “misuse�
 
 ## The data used
 
-The data we acquired comes from the platform “YouTube”, a free video-sharing social network. Data from 2005 until 2019 was extracted and further compiled into a dataset called “YouNiverse”. This dataset provides us with the metadata on videos that are in English, uploaded by anonymous users worldwide.
+<div style="text-align: justify"> The data we acquired comes from the platform “YouTube”, a free video-sharing social network. Data from 2005 until 2019 was extracted and further compiled into a dataset called “YouNiverse”. This dataset provides us with the metadata on videos that are in English, uploaded by anonymous users worldwide. </div>
 
 ## Research question 
 
-Intuitively, we all know that popular tags are indeed being misused to amplify the audience. But what type of tags are most likely to be abused? Do these tags tend to be trendy for a long time? Our goal here is to not only detect the abuse of tags, but also to observe the trajectories of tags. 
+<div style="text-align: justify"> Intuitively, we all know that popular tags are indeed being misused to amplify the audience. But what type of tags are most likely to be abused? Do these tags tend to be trendy for a long time? Our goal here is to not only detect the abuse of tags, but also to observe the trajectories of tags. </div>
+
 Here are some interesting questions we’ll dive into:
 - How do tags evolve and die? When they start to appear as popular tags, do they coincide with the emergence of real-life events?
 - How do clusters of tags that are used together behave temporally? Do trending tags gain importance in these clusters during their popularity?
@@ -31,7 +32,7 @@ Here are some interesting questions we’ll dive into:
 
 ## How do tags evolve and die?
 
-The first analyses revolve around observing the trajectories of tags. The statistics from OBERLO shows that there are 500 hours of videos uploaded to YouTube. Every. Single. Minute. This indirectly indicates that there might be thousands of tags and its varieties being used. We first look at the trajectories of these tags.
+<div style="text-align: justify"> The first analyses revolve around observing the trajectories of tags. The statistics from OBERLO shows that there are 500 hours of videos uploaded to YouTube. Every. Single. Minute. This indirectly indicates that there might be thousands of tags and its varieties being used. We first look at the trajectories of these tags. </div>
 
 Show three cases of popularity: 
 (1) tags that gain periodic popularity, 
@@ -39,16 +40,17 @@ Show three cases of popularity:
 (3) tags that managed to remain popular for very long periods of time 
 
 
-Discussion:
+<div style="text-align: justify"> Discussion:
 We chose the tags X Y Z as they are the most popular tags being used, and popular tags tend to be abused or misused. As the charts shown above, are some of the trends that gain periodic population; the use of these tags spikes up in [period/ date]. After looking into the news in that period, we notice that the tags coincide with real-life events. 
 [what visualization suits this question?]
-[add in..
+[add in...] </div>
 
 
 ## How do clusters of tags that are used together behave temporally? 
 
 
-In the dataset, we observe that these popular tags are rarely used alone. For example, X is often used with Y and Z. So, in the second task, we will drill up the data to view them on a global scale, using clusters. 
+<div style="text-align: justify"> In the dataset, we observe that these popular tags are rarely used alone. For example, X is often used with Y and Z. So, in the second task, we will drill up the data to view them on a global scale, using clusters. </div>
+
 By using centrality analysis, we can:
 - See how the popular tags are used with other tags
 - Do these tags relate to each other? 
@@ -60,8 +62,8 @@ By using centrality analysis, we can:
 
 
 
-To find the most related tags among the *13321* tags that were used together on 2016 November, we calculate a *pmi-like* calculation without considering the usage of tag **trump** given it is equal among all tags. With the filtering approach explained below, we reduce the number of related tags to **176**.
-Here are the tags with the highest ratio, with our approach:
+<div style="text-align: justify"> To find the most related tags among the *13321* tags that were used together on 2016 November, we calculate a *pmi-like* calculation without considering the usage of tag **trump** given it is equal among all tags. With the filtering approach explained below, we reduce the number of related tags to **176**.
+Here are the tags with the highest ratio, with our approach: </div>
 
 <div class="row">
 <div class="col-md-6" markdown="1">
