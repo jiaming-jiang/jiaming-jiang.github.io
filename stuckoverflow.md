@@ -133,6 +133,7 @@ Results for each category can be seen on the following charts:
 Among all randomly selected videos **58.9%**were labeled as misuse, **19.5%** as related and **21.6%** as *N/A*. If we exclude *N/A*, **75.1%** of the videos are misuse. 
 The categories that had the most misuse are: **Sports** with **84.5%** .... WRITE MORE
 
+
 One may think these are small channels, we saw that even official Mercedes F1 team is misusing the tag *trump* in several videos. This video uses the tag *trump* with other misused tag such as *"christmas"* (video was published in December):
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4p0c2O6tqgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
