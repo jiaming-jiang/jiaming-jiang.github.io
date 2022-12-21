@@ -1,66 +1,45 @@
 ---
 layout: page
-title: Trends on Tags - in the world of Tags
-subtitle: YouTube videos
+title: Trends on Tags 
+subtitle: Exposing The Misuse of Tags in YouTube
 cover-img: /assets/img/earth.png
 thumbnail-img: /assets/img/earth.png
 share-img: /assets/img/earth.png
 ---
-
-<div style="text-align: justify"> Tags are an important part of many digital platforms, including YouTube, social media sites, and online forums. They help users find and organize content on the platform, and they help the platform's algorithm understand the content and make recommendations to users. In YouTube, tags can help users find videos on a specific topic, and they can help the platform recommend a video to users who are interested in that topic. Generally, tags help make digital platforms more useful and user-friendly by making it easier to find and organize content.
-Unfortunately, every good tool is prone to abuse and misuse. The word “misuse” indicates that users use them in less relevant videos because they fail to grasp the true context of the tag; while “abuse” indicates how some users deliberately use popular tags in irrelevant videos for personal gains.  Miscategorizing videos by adding irrelevant tags is against the terms of services and is a direct violation in YouTube’s policy on misleading metadata. The abuse of tags has been a long-term concern in the community, in which Google has decided that the tags were made private from public pages to stop some users from “abusing tags by copying them from other videos” back in 2012. The question is: How critical was the misuse of tags back then? And are we able to detect a certain pattern of tags that are more prone to abuse and misuse? </div>
+<div style="text-align: justify"> Did you know that tags play a crucial role in helping users discover and organize content on digital platforms like YouTube, social media, and online forums? They can help users find videos on specific topics and can even help platforms recommend videos to users based on their interests. But just like any other feature, tags can also be abused and misused. In fact, YouTube has a policy against misleading metadata, and using irrelevant tags on a video is a violation of the platform's terms of service. <br><br>
+Unfortunately, tag abuse has been a longstanding issue in the online community. In 2012, Google even made tags private on YouTube's public pages in an effort to stop some users from "abusing tags by copying them from other videos." So the question remains: <br>
+<img src="(images/ADA-intro.png">
+</div>
 
 
 ## The data used
 
-<div style="text-align: justify"> The data we acquired comes from the platform “YouTube”, a free video-sharing social network. Data from 2005 until 2019 was extracted and further compiled into a dataset called “YouNiverse”. This dataset provides us with the metadata on videos that are in English, uploaded by anonymous users worldwide. </div>
+<div style="text-align: justify"> The data we acquired comes from the platform “YouTube”, a free video-sharing social network. Data from 2005 until 2019 was extracted and further compiled into a dataset called “YouNiverse”. This dataset provides us with the metadata on videos that are in English, uploaded by anonymous users worldwide.  </div>
 
-## Research question 
-
-<div style="text-align: justify"> Intuitively, we all know that popular tags are indeed being misused to amplify the audience. But what type of tags are most likely to be abused? Do these tags tend to be trendy for a long time? Our goal here is to not only detect the abuse of tags, but also to observe the trajectories of tags. </div>
-
-Here are some interesting questions we’ll dive into:
-- How do tags evolve and die? When they start to appear as popular tags, do they coincide with the emergence of real-life events?
-- How do clusters of tags that are used together behave temporally? Do trending tags gain importance in these clusters during their popularity?
-- Do people misuse video tags on unrelated video categories to exploit trending topics?
-
-
+## Do people go to great lengths to include tags in their videos?
 
 {% include tag_counts.html %}
+
+<div style="text-align: justify"> You might think that adding tags to a video is just a matter of throwing in a few random keywords, but it turns out that most users are actually quite strategic about it. In fact, excluding the small minority of videos that have no tags at all, the vast majority of videos seem to include around 10 tags on average. But don't let that fool you - there are always a few outliers who go above and beyond. Some videos have been found to contain an astounding 60 tags or more! Clearly, some users are willing to go the extra mile when it comes to tagging their content. Now let’s look at how the average number of tags per video each year: </div>
+
 {% include tag_count_timeline.html %}
+
+<div style="text-align: justify"> In 2005, the average number of tags per video was a modest 12. But over the next few years, the trend began to shift. By 2012, that number had skyrocketed to a peak of 17 tags per video. And even beyond 2012, the graph shows that people consistently added more or less 10 tags in their video. </div>
+
+
 
 
 ## How do tags evolve and die?
 
-<div style="text-align: justify"> The first analyses revolve around observing the trajectories of tags. The statistics from OBERLO shows that there are 500 hours of videos uploaded to YouTube. Every. Single. Minute. This indirectly indicates that there might be thousands of tags and its varieties being used. We first look at the trajectories of these tags. </div>
-
-Show three cases of popularity: 
-(1) tags that gain periodic popularity, 
-(2) a popular concept becoming almost like a genre, such as the ASMR, and 
-(3) tags that managed to remain popular for very long periods of time 
+<div style="text-align: justify"> [to be edited.]</div>
 
 
-<div style="text-align: justify"> Discussion:
-We chose the tags X Y Z as they are the most popular tags being used, and popular tags tend to be abused or misused. As the charts shown above, are some of the trends that gain periodic population; the use of these tags spikes up in [period/ date]. After looking into the news in that period, we notice that the tags coincide with real-life events. 
-[what visualization suits this question?]
-[add in...] </div>
 
+## How do clusters of tags that are used together behave temporally?
 
-## How do clusters of tags that are used together behave temporally? 
-
-
-<div style="text-align: justify"> In the dataset, we observe that these popular tags are rarely used alone. For example, X is often used with Y and Z. So, in the second task, we will drill up the data to view them on a global scale, using clusters. </div>
-
-By using centrality analysis, we can:
-- See how the popular tags are used with other tags
-- Do these tags relate to each other? 
-- Are there types of tags that are used in various categories? These tags can be labeled as dynamic tags and would not be subject to misused and they are appropriate for every category
-- But is the centrality reliable? It might raise doubts, so let’s do some empirical analysis using pointwise mutual information [explain a little on how PMI works in finding association of words] to prove that centrality can assist in misuse detection. 
-
+<div style="text-align: justify"> [to be edited.]</div>
 
 ## Do people misuse video tags on unrelated video categories to exploit trending topics?
-
-
 
 <div style="text-align: justify"> To find the most related tags among the *13321* tags that were used together on 2016 November, we calculate a *pmi-like* calculation without considering the usage of tag **trump** given it is equal among all tags. With the filtering approach explained below, we reduce the number of related tags to **176**.
 Here are the tags with the highest ratio, with our approach: </div>
@@ -79,13 +58,14 @@ Here are the tags with the highest ratio, with our approach: </div>
     <li><i>Ratio</i> = <i>num_used_trump</i> / <i>num_used</i> * 100</li>
     <li>We take the tags with length>2 and with ratio>0.5</li>
 </ul>
-  
+
 </div>
 </div>
+
+
 
 <div style="text-align: justify"> We selected tags in 90% to eliminate tags not used in multiple videos. Assuming people who misuse tags also use other irrelevant tags, with this approach we eliminate those if many people do not use the same tag pair together. This is also helpful to not include tags with typos.*
 *The selection of threshold affects the number of related tags found, for our analysis, we wanted to focus on precision and be sure on suspecting a video as misuse. </div>
-
 
 <div style="text-align: justify"> These tags represent the words that are tend to be used with our tag of interest, using these tags, we check if we can find misused examples on other categories. For each category other than "News & Politics", we extract all videos tagged with **trump** in the 5 month timeframe between September 2016 and January 2017. This timeframe includes the trend date November 2016 in the middle, which is also the election date.We then check if these videos include related keywords found above. Number of videos including these tags among videos tagged with *trump* can be found below: </div>
 
@@ -130,14 +110,14 @@ Results for each category can be seen on the following charts:
 
 {% include misuse_pie.html %}
 
-Among all randomly selected videos **58.9%**were labeled as misuse, **19.5%** as related and **21.6%** as *N/A*. If we exclude *N/A*, **75.1%** of the videos are misuse. 
+Among all randomly selected videos **58.9%**were labeled as misuse, **19.5%** as related and **21.6%** as *N/A*. If we exclude *N/A*, **75.1%** of the videos are misuse.
 The categories that had the most misuse are: **Sports** with **84.5%** .... WRITE MORE
 
-
 One may think these are small channels, we saw that even official Mercedes F1 team is misusing the tag *trump* in several videos. This video uses the tag *trump* with other misused tag such as *"christmas"* (video was published in December):
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4p0c2O6tqgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-We then check how the percentage of the misuse change with time. 
+We then check how the percentage of the misuse change with time.
 {% include timeline.html %}
 
 <div style="text-align: justify"> We now test this approach on different tags. World cup is an internationally popular event. Let's check if we can find misuse examples. 
@@ -148,14 +128,10 @@ We sample videos with the above approach and here are some random videos that ou
 <div style="text-align: justify"> Some short manual inspection shows that most of the titles are unrelated. But there are also titles we mislabel. Even though it did not come home, video with title **"IT'S COMING HOME !!!!!! (Runescape Song)"** tricked us. </div>
 
 Limitations of this approach:
+
 - We may be falsely labeling the videos as relevant, even though they are misuse. If you are talking about Mc Donald's, feel free to use the tag *"trump"*.
 - There are hyperparameters such as *percentile* and *threshold*. Since manual labeling was needed, we did not explore so many values, but this can also effect the final result.
-
-
 
 ## Conclusion & Implication
 
 To conclude, tags are really useful ;)
-
-
-
