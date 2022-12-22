@@ -33,6 +33,12 @@ Unfortunately, tag abuse has been a longstanding issue in the online community. 
 
 <div style="text-align: justify"> [to be edited.]</div>
 
+{% include popular_timeline.html %}
+{% include legend.html %}
+
+
+<img src="/images/popularity_histogram.png">
+<img src="/images/used_histogram.png">
 
 
 ## How do clusters of tags that are used together behave temporally?
