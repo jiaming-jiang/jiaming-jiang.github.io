@@ -59,9 +59,9 @@ Another analysis can be carried out to identify "popular" tags that show sudden 
 </div>
 
 For each month: 
-* Filtering less used tags: tags that are used less than the 90th percentile of tag usages in the given month are filtered out. This step allows us to eliminate the tags that are used in few videos as we want to find popular tags that are both used more compared to their previous usages and also used enough to be considered popular.
-* Z-score calculation: all the Z-scores of the tags are calculated as follows: $\frac{(usage-\mu)}{\sigma}$, where $\mu$ and $\sigma$ are the average and the standard deviation of usages in previous months. If the tag is introduced in the current month, average and the standard deviation of all previous usages of all tags in previous months is used instead. 
-* Ranking the Z-score: Tags with highest Z-scores are identified as popular tags in the given month. 
+* **Filtering less used tags:** tags that are used less than the 90th percentile of tag usages in the given month are filtered out. This step allows us to eliminate the tags that are used in few videos as we want to find popular tags that are both used more compared to their previous usages and also used enough to be considered popular.
+* **Z-score calculation:** all the Z-scores of the tags are calculated as follows: $\frac{(usage-\mu)}{\sigma}$, where $\mu$ and $\sigma$ are the average and the standard deviation of usages in previous months. If the tag is introduced in the current month, average and the standard deviation of all previous usages of all tags in previous months is used instead. 
+* **Ranking the Z-score:** Tags with highest Z-scores are identified as popular tags in the given month. 
 
 Let's see if we see recognize some popular tags that coincide with real life events:
 
@@ -123,9 +123,8 @@ Now that we have a general understanding of the tags, let's return to the questi
 ## Do people misuse video tags on unrelated video categories to exploit trending topics?
 
 <div style="text-align: justify"> 
-Although Youtube claims that tags are not a significant factor in the video recommendation algorithm, users might still use tags related to popular events with the hopes of gaining more views. We now investigate this claim in a case study, Trump's election in November 2016. We previously identified that tags related to Trump such as "#trump2016" and "trump cabinet" were popular in the election period in 2016. Given that misuse is related to the video content, we assume that the title represents the content of the video and therefore we take advantage of the titles of the videos in our analysis. The first thing that comes to mind may be to check the presence
-of the word "Trump" in the title, however, this would not take us further as videos with titles not containing Trump may still be relevant, such as "Meet Up Details / Feelings about New President!". To tackle this problem, we first find the most related tags with the tag "trump", and also use those as a hint of relevance.
-
+Although Youtube claims that tags are not a significant factor in the video recommendation algorithm, users might still use tags related to popular events with the hopes of gaining more views. We now investigate this claim in a case study - Trump's election in November 2016. <br><br> We previously identified that tags related to Trump such as "#trump2016" and "trump cabinet" were popular in the election period in 2016. Given that misuse is related to the video content, we assume that the title represents the content of the video and therefore we take advantage of the titles of the videos in our analysis. The first thing that comes to mind may be to check the presence of the word "Trump" in the title, however, this would not take us further as videos with titles not containing Trump may still be relevant, such as "Meet Up Details / Feelings about New President!". To tackle this problem, we first find the most related tags with the tag "trump", and also use those as a hint of relevance.
+<br><br>
 In order to identify the tags that are most closely related to "trump" among the <b>13,321</b> tags used with "trump" in the "News & Politics" category in November 2016, we used a metric similar to <b>pointwise mutual information (PMI)</b> without considering the usage of tag **trump** given it is equal among all tags. By applying the filtering method, that is explained below, we were able to reduce the number of related tags to 176. The following tags had the highest ratio according to our approach, which means that they are often used together with the tag “trump”:
 </div>
 
@@ -151,7 +150,7 @@ In order to identify the tags that are most closely related to "trump" among the
 
 <div style="text-align: justify"> For the relevant tags to be representative of the whole category, we eliminate the tags that are not in the first 90 percentile of usage and therefore not commonly used. For example, if Trump supporter Alicia uses the tags “trump” and “alicia loves trump” on all her videos, this would result in ratio of 100% but would not be the tag type we are interested in. This approach also helps us exclude tags with typos, given they are unlikely to be used commonly.
 The threshold we set for selecting tags will impact the number of related tags we find. For our analysis, we wanted to focus on precision by selecting a low threshold and be sure that the suspected videos indeed show misuse.</div>
-
+<br>
 <div style="text-align: justify"> The remaining tags represent keywords that tend to be used together with our tag of interest – “trump”. Using these tags, we check if we can find misused examples in other categories. For every category other than “News & Politics”, we extract all the videos that are tagged with “trump” in a 5-month timeframe, between September 2016 and January 2017. We chose this time frame as it corresponds to the election period, where Trump and Clinton were the talk of the town. We then inspect whether these videos contained the related keywords (the remaining tags mentioned before). The number of videos that contains both the keyword and the tag “trump’ can be found below: </div>
 
 <div class="row" style="max-height: 40%">
