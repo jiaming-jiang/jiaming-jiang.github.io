@@ -60,7 +60,7 @@ Another analysis can be carried out to identify "popular" tags that show sudden 
 
 For each month: 
 * **Filtering less used tags:** tags that are used less than the 90th percentile of tag usages in the given month are filtered out. This step allows us to eliminate the tags that are used in few videos as we want to find popular tags that are both used more compared to their previous usages and also used enough to be considered popular.
-* **Z-score calculation:** all the Z-scores of the tags are calculated as follows: $\frac{(usage-\mu)}{\sigma}$, where $\mu$ and $\sigma$ are the average and the standard deviation of usages in previous months. If the tag is introduced in the current month, average and the standard deviation of all previous usages of all tags in previous months is used instead. 
+* **Z-score calculation:** all the Z-scores of the tags are calculated as follows: $$\frac{(usage-\mu)}{\sigma}$$, where $$\mu$$ and $$\sigma$$ are the average and the standard deviation of usages in previous months. If the tag is introduced in the current month, average and the standard deviation of all previous usages of all tags in previous months is used instead. 
 * **Ranking the Z-score:** Tags with highest Z-scores are identified as popular tags in the given month. 
 
 Let's see if we see recognize some popular tags that coincide with real life events:
