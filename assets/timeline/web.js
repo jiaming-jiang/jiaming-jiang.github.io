@@ -22,21 +22,21 @@ var popular_events = await read_json();//popular_events = JSON.parse(popular_eve
 
 popular_events = new Map(Object.entries(popular_events));
 var month_texts = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-var colors = {"Auto & Vehicles":"1e91d6",
-"Comedy":"e15554",
-"Education":"0072bb",
-"Entertainment":"e18335",
-"Film & Animation":"e1bc29",
-"Gaming":"1c5253",
-"Howto & Style":"e4cc37",
-"Music":"b6174b",
-"News & Politics":"8fc93a",
-"Nonprofits & Activism":"f3ffc6",
-"People & Blogs":"306b34",
-"Pets & Animals":"3bb273",
-"Science & Technology":"c3eb78",
-"Sports":"7768ae",
-"Travel & Events":"4d9de0"
+var colors = {"Auto & Vehicles":"2f4f4f",
+"Comedy":"6495ed",
+"Education":"00fa9a",
+"Entertainment":"a0522d",
+"Film & Animation":"ffff00",
+"Gaming":"00ced1",
+"Howto & Style":"0000ff",
+"Music":"ff1493",
+"News & Politics":"4b0082",
+"Nonprofits & Activism":"ffdead",
+"People & Blogs":"ffa500",
+"Pets & Animals":"00ff00",
+"Science & Technology":"ff00ff",
+"Sports":"ff0000",
+"Travel & Events":"006400"
 }
 colors = new Map(Object.entries(colors));
 //for(var category of colors.keys()){
