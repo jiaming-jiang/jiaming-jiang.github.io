@@ -123,7 +123,7 @@ Now that we have a general understanding of the tags, let's return to the questi
 ## Do people misuse video tags on unrelated video categories to exploit trending topics?
 
 <div style="text-align: justify"> 
-Although Youtube claims that tags are not a significant factor in the video recommendation algorithm, users might still use tags related to popular events with the hopes of gaining more views. We now investigate this claim in a case study - Trump's election in November 2016. <br><br> We previously identified that tags related to Trump such as "#trump2016" and "trump cabinet" were popular in the election period in 2016. Given that misuse is related to the video content, we assume that the title represents the content of the video and therefore we take advantage of the titles of the videos in our analysis. The first thing that comes to mind may be to check the presence of the word "Trump" in the title, however, this would not take us further as videos with titles not containing Trump may still be relevant, such as "Meet Up Details / Feelings about New President!". To tackle this problem, we first find the most related tags with the tag "trump", and also use those as a hint of relevance.
+Although Youtube claims that tags are not a significant factor in the video recommendation algorithm, users might still use tags related to popular events with the hopes of gaining more views. We now investigate this claim in a case study - Trump's election in November 2016. <br><br> We previously identified that tags related to Trump such as "#trump2016" and "trump cabinet" were popular in the election period in 2016. Given that misuse is related to the video content, we assume that the title represents the content of the video and therefore we take advantage of the titles of the videos in our analysis. The first thing that comes to mind may be to check the presence of the word "Trump" in the title, however, this would not take us further as videos with titles not containing Trump may still be relevant, such as "Meet Up Details / Feelings about New President!". To tackle this problem, we first find the most related tags with the tag "trump", and use those as a hint of relevance.
 <br><br>
 In order to identify the tags that are most closely related to "trump" among the <b>13,321</b> tags used with "trump" in the "News & Politics" category in November 2016, we used a metric similar to <b>pointwise mutual information (PMI)</b> without considering the usage of tag <b>trump</b> given it is equal among all tags. By applying the filtering method, that is explained below, we were able to reduce the number of related tags to 176. The following tags had the highest ratio according to our approach, which means that they are often used together with the tag “trump”:
 </div>
@@ -202,7 +202,7 @@ Given **613** randomly selected videos, we labeled them as either *Misuse*, *Rel
 
 {% include misuse_pie.html %}
 
-Among all randomly selected videos, 59.2% were labeled as misuse, 19.6% as Related and 21.2% as N/A. If we exclude N/A, 75.2% of the videos would fall under the category of misuse. The categories that had the most misuse are:
+Among all randomly selected videos, 59.2% were labeled as misuse, 19.6% as Related and 21.2% as N/A. If we exclude N/A, 75.2% of the videos would fall under the category of misuse. Sports category for example has a misuse rate of 84.2%, which can be considered high.
 
 You might assume that only small-time video creators are guilty of misusing tags in order to attract more viewers. But hold on to your seat belts, because we discovered that even the official Mercedes F1 Team's channel has jumped on the tag misuse bandwagon! In fact, they've misused the tag "trump" not just once, but multiple times. For instance, check out this video where they paired "trump" with another highly misused tag – "christmas". Talk about a wild ride!
 
@@ -213,8 +213,10 @@ You might assume that only small-time video creators are guilty of misusing tags
 Next, we'll see if the percentage of tag misuse changes over time. 
 {% include timeline.html %}
 
-<div style="text-align: justify"> The graph shows a slight drop in October 2016 and January 2017, but peaked in November and December 2016; we can assume that more "trump" tags were misused in these 2 months. It's time to put our approach to the test with some different tags. The World Cup is a huge, global event, so let's see if we can find any examples of misuse. We'll sample videos from 2018 using the aforementioned approach and check out a few random videos that are labeled as misuse. Get ready for some tag-tastic data!
+<div style="text-align: justify"> The graph shows a slight drop in October 2016 and January 2017, but peaked in November and December 2016; we can assume that more "trump" tags were misused in these 2 months. 
 </div>
+
+It's time to put our approach to the test with some different tags. The World Cup is a huge, global event, so let's see if we can find any examples of misuse. We'll sample videos from 2018 using the aforementioned approach and check out a few random videos that are labeled as misuse. Get ready for some tag-tastic data!
 
 {% include world_cup_examples.html %}
 
