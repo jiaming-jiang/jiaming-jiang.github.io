@@ -2,9 +2,9 @@
 layout: page
 title: Trends on Tags 
 subtitle: Exposing The Misuse of Tags in YouTube
-cover-img: /assets/img/header2.png
-thumbnail-img: /assets/img/header2.png
-share-img: /assets/img/header2.png
+cover-img: /assets/img/header.png
+thumbnail-img: /assets/img/header.png
+share-img: /assets/img/header.png
 ---
 <div style="text-align: justify"> Did you know that tags play a crucial role in helping users discover and organize content on digital platforms like YouTube, social media, and online forums? They can help users find videos on specific topics and can even help platforms recommend videos to users based on their interests. But just like any other feature, tags can also be abused and misused. In fact, YouTube has a policy against misleading metadata, and using irrelevant tags on a video is a violation of the platform's terms of service. <br><br>
 Unfortunately, tag abuse has been a longstanding issue in the online community. In 2012, Google even made tags private on YouTube's public pages in an effort to stop some users from "abusing tags by copying them from other videos." So the question remains: <br>
