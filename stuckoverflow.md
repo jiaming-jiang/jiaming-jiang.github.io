@@ -6,17 +6,21 @@ cover-img: /assets/img/header_.png
 thumbnail-img: /assets/img/header_.png
 share-img: /assets/img/header_.png
 ---
-<div style="text-align: justify"> Did you know that tags play a crucial role in helping users discover and organize content on digital platforms like YouTube, social media, and online forums? They can help users find videos on specific topics and can even help platforms recommend videos to users based on their interests. But just like any other feature, tags can also be abused and misused. In fact, YouTube has a policy against misleading metadata, and using irrelevant tags on a video is a violation of the platform's terms of service. <br><br>
+<div style="text-align: justify"> 
+Did you know that tags play a crucial role in helping users discover and organize content on digital platforms like YouTube, social media, and online forums? They can help users find videos on specific topics and can even help platforms recommend videos to users based on their interests. But just like any other feature, tags can also be abused and misused. In fact, YouTube has a policy against misleading metadata, and using irrelevant tags on a video is a violation of the platform's terms of service. <br><br>
 Unfortunately, tag abuse has been a longstanding issue in the online community. In 2012, Google even made tags private on YouTube's public pages in an effort to stop some users from "abusing tags by copying them from other videos." So the question remains: <br>
 <img src="/images/ADA-intro.png">
 </div>
-
 
 ## The data used
 
 <div style="text-align: justify"> The data we acquired comes from the platform “YouTube”, a free video-sharing social network. Data from 2005 until 2019 was extracted and further compiled into a dataset called “YouNiverse”. This dataset provides us with the metadata on videos that are in English, uploaded by anonymous users worldwide.  </div>
 
-## Do people go to great lengths to include tags in their videos?
+## How do users use the tags?
+
+<div style="text-align: justify">The dataset includes tags used for each video, and by examining these tags, we may uncover some patterns. Therefore, before trying to find the videos with misused tags, we will first analyze general behavior of the tags. While doing so, we will try to answer several important questions. </div>
+
+### Do people go to great lengths to include tags in their videos?
 
 {% include tag_counts.html %}
 
@@ -27,21 +31,21 @@ Unfortunately, tag abuse has been a longstanding issue in the online community. 
 <div style="text-align: justify"> In 2005, the average number of tags per video was a modest 12. But over the next few years, the trend began to shift. By 2012, that number had skyrocketed to a peak of 17 tags per video. And even beyond 2012, the graph shows that people consistently added more or less 10 tags in their video. </div>
 
 
+### How do tags evolve and die?
 
+<div style="text-align: justify"> Many different tags can be used to describe the content of a video. How long a tag is used before disappearing?  </div>
 
-## How do tags evolve and die?
-
-<div style="text-align: justify"> [to be edited.]</div>
+<img src="/images/used_months_histogram.png">
 
 {% include popular_timeline.html %}
 {% include legend.html %}
 
 
-<img src="/images/popularity_histogram.png">
-<img src="/images/used_histogram.png">
+<img src="/images/popular_months_histogram.png">
 
+<img src="/images/popularity_histogram_category.png">
 
-## How do clusters of tags that are used together behave temporally?
+### How do clusters of tags that are used together behave temporally?
 
 <div style="text-align: justify"> [to be edited.]</div>
 
