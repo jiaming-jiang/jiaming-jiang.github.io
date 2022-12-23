@@ -155,6 +155,7 @@ In order to identify the tags that are most closely related to "trump" among the
 
 <div style="text-align: justify"> For the relevant tags to be representative of the whole category, we eliminate the tags that are not in the first 90 percentile of usage and therefore not commonly used. For example, if Trump supporter Alicia uses the tags “trump” and “alicia loves trump” on all her videos, this would result in ratio of 100% but would not be the tag type we are interested in. This approach also helps us exclude tags with typos, given they are unlikely to be used commonly.
 The threshold we set for selecting tags will impact the number of related tags we find. For our analysis, we wanted to focus on precision by selecting a low threshold and be sure that the suspected videos indeed show misuse.</div>
+<br>
 <div style="text-align: justify"> The remaining tags represent keywords that tend to be used together with our tag of interest – “trump”. Using these tags, we check if we can find misused examples in other categories. For every category other than “News & Politics”, we extract all the videos that are tagged with “trump” in a 5-month timeframe, between September 2016 and January 2017. We chose this time frame as it corresponds to the election period, where Trump and Clinton were the talk of the town. We then inspect whether these videos contained the related keywords (the remaining tags mentioned before). The number of videos that contains both the keyword and the tag “trump’ can be found below: </div>
 
 <div class="row" style="max-height: 40%">
