@@ -11,7 +11,7 @@ Did you know that tags play a crucial role in helping users discover and organiz
 
 Unfortunately, tag abuse has been a longstanding issue in the online community. In 2012, Google even made tags private on YouTube's public pages in an effort to stop some users from "abusing tags by copying them from other videos."
  <br><br>
-With these, we are more interested in finding out:
+With these in mind, we are more interested in finding out:
  <br>
 <img src="/images/intro_banner.png">
 </div>
@@ -233,8 +233,8 @@ Now we have seen that although our approach did manage to detect the misuse of d
 
 
 ## Conclusion & Implication
-<div style="text-align: justify">
+
 In this work, we analyzed the behavior of tags, focusing on popularity and misuse. We saw that the average number of tags per video has increased over time, and certain tags are used more frequently together than others. We analyzed the interactions of tags with each other and identified tags gaining popularity. 
 <br>
 Even though adding excessive tags is against [YouTube's policies](https://support.google.com/youtube/answer/146402?hl=en-GB) on spam, deceptive practices and scams, our analysis showed that there is indeed a tag misuse problem. It has been found that tags on YouTube can be misused in order to manipulate the visibility of a video or to exploit trending topics. Given our data is not up-to-date, the validity of this claim should be investigated further for the current behavior of the users.
-</div>
+
