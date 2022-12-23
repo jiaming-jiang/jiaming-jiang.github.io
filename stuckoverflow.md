@@ -30,7 +30,7 @@ Nevertheless, we are more interested in finding out:
 
 {% include tag_count_timeline.html %}
 
-<div style="text-align: justify"> In 2005, the average number of tags per video was a modest 12. But over the next few years, the trend began to shift. By 2012, that number had skyrocketed to a peak of 17 tags per video. And even beyond 2012, the graph shows that people consistently added more or less 10 tags in their video. </div>
+<div style="text-align: justify"> In 2005, the average number of tags per video was a modest 12. But over the next few years, the trend began to shift. By 2012, that number had skyrocketed to a peak of 17 tags per video. And even beyond 2012, the graph shows that people consistently added more or less 15 tags in their video. </div>
 
 
 ### How do tags evolve and die?
