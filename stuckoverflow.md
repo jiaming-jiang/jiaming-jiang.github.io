@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Trends on Tags 
-subtitle: Exposing The Misuse of Tags in YouTube
+subtitle: Discovering Tag Behaviour in YouTube
 cover-img: /assets/img/header_.png
 thumbnail-img: /assets/img/header_.png
 share-img: /assets/img/header_.png
