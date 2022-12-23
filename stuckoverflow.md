@@ -22,7 +22,7 @@ With these in mind, we are more interested in finding out:
 
 ## How do users use the tags?
 
-<div style="text-align: justify">The dataset includes tags used for each video, and by examining these tags, we may uncover some patterns. Therefore, before trying to find the videos with misused tags, we will first analyze general behavior of the tags. While doing so, we will try to answer several important questions. </div>
+<div style="text-align: justify">The dataset includes tags used for each video, and by examining these tags, we may uncover some patterns. Therefore, before trying to find the videos with misused tags, we will first analyze the general behavior of the tags. While doing so, we will try to answer several important questions. </div>
 
 ### Do people go to great lengths to include tags in their videos?
 
@@ -38,12 +38,12 @@ With these in mind, we are more interested in finding out:
 ### How do tags evolve and die?
 
 <div style="text-align: justify">We now know that people indeed use tags regularly, but does each tag is used consistently? We might investigate how long tags are used in the environment of YouTube.
-In this analysis, we would like to observe if there lies a common pattern in the trajectories of these tags: do most tags have common lifespan before their usage drops? Let’s find out by plotting the probability mass function of number of consecutive months tags are used:</div>
+In this analysis, we would like to observe if there lies a common pattern in the trajectories of these tags: do most tags have common lifespan before their usage drops? Let’s find out by plotting the probability mass function of the number of consecutive months tags are used:</div>
 
 <img src="/images/used_months_histogram.png">
 
 <div style="text-align: justify"> 
-From the plot above, we can see that the average lifespan of a tag is one month and that YouTube is a highly dynamic platform. In other words, numerous tags emerge over time but most of them die down after a month. There are, however, cases where the tags’ lifespans exceed more than 10 months to 100 months such. Moreover, histogram shows somewhat a linear relationship in log-log scale with some outliers towards higher number of months. This suggests that the lifespan of tags might have a power-law pattern.
+From the plot above, we can see that the average lifespan of a tag is one month and that YouTube is a highly dynamic platform. In other words, numerous tags emerge over time but most of them die down after a month. There are, however, cases where the tags’ lifespans exceed more than 10 months to 100 months such. Moreover, the histogram shows somewhat a linear relationship in log-log scale with some outliers towards higher number of months. This suggests that the lifespan of tags might have a power-law pattern.
 <br>
 Some tags even show a periodic usage pattern with peaks in periods where they get relevant:
 </div>
@@ -52,7 +52,7 @@ Some tags even show a periodic usage pattern with peaks in periods where they ge
 
 {% include olympic_usage.html %}
 
-<div style="text-align: justify">Plots show that the tag "halloween" is used frequently on October and the tag "olympics" is used in summer of 2012 and 2016, corresponding to summer Olympics, and in winter 2014, corresponding to winter Olympics.</div>
+<div style="text-align: justify">Plots show that the tag "halloween" is used frequently in October and the tag "olympics" is used in summer of 2012 and 2016, corresponding to summer Olympics, and in winter 2014, corresponding to the winter Olympics.</div>
 
 ### What about popular tags?
 
@@ -62,7 +62,7 @@ The analysis can be carried out to identify "popular" tags that show sudden incr
 </div>
 
 For each month: 
-* **Filtering less used tags:** tags that are used less than the 90th percentile of tag usages in the given month are filtered out. This step allows us to eliminate the tags that are used in few videos as we want to find popular tags that are both used more compared to their previous usages and also used enough to be considered popular.
+* **Filtering less used tags:** tags that are used less than the 90th percentile of tag usage in the given month are filtered out. This step allows us to eliminate the tags that are used in few videos as we want to find popular tags that are both used more compared to their previous usages and also used enough to be considered popular.
 * **Z-score calculation:** all the Z-scores of the tags are calculated with standardization by subtracting the historical mean and  dividing by the historical standard deviation. If the tag is introduced in the current month, average and the standard deviation of all previous usages of all tags in previous months is used instead. 
 * **Ranking the Z-score:** Tags with highest Z-scores are identified as popular tags in the given month. 
 
@@ -96,7 +96,7 @@ Most of the popularity periods range from 2 to 3 months; with 2.37 months (Trave
 
 ### How do clusters of tags that are used together behave temporally?
 <div style="text-align: justify">
-We analysed the tags separately until now, but tags that are used together in a video may also reveal some important insights. We can interpret the tag-video pairs  
+We analyzed the tags separately until now, but tags that are used together in a video may also reveal some important insights. We can interpret the tag-video pairs  
 as a bipartite graph, with tags on one side and videos on the other. Here is a small example
 from "Sports" category where videos are connected by the tag "argentina". 
 </div>
@@ -105,7 +105,7 @@ from "Sports" category where videos are connected by the tag "argentina".
 
 </div>
 
-From this bipartite graph, with a projection, we can observe the network between tags where the weigths represent how many videos two tags were used together.
+From this bipartite graph, with a projection, we can observe the network between tags where the weights represent how many videos two tags were used together.
 
 <div style="text-align:center">
 <img src="/images/tag.png">
@@ -206,7 +206,7 @@ Given **613** randomly selected videos, we labeled them as either *Misuse*, *Rel
 
 {% include misuse_pie.html %}
 
-Among all randomly selected videos, 59.2% were labeled as misuse, 19.6% as Related and 21.2% as N/A. If we exclude N/A, 75.2% of the videos would fall under the category of misuse. Sports category for example has a misuse rate of 84.2%, which can be considered high. These scores validate the capabilities of our approach and verifies that we can infer the misuse to some degree. 
+Among all randomly selected videos, 59.2% were labeled as misuse, 19.6% as Related and 21.2% as N/A. If we exclude N/A, 75.2% of the videos would fall under the category of misuse. Sports category for example has a misuse rate of 84.2%, which can be considered high. These scores validate the capabilities of our approach and verify that we can infer the misuse to some degree. 
 
 You might assume that only small-time video creators are guilty of misusing tags in order to attract more viewers. But hold on to your seat belts, because we discovered that even the official Mercedes F1 Team's channel has jumped on the tag misuse bandwagon! In fact, they've misused the tag "trump" not just once, but multiple times. For instance, check out this video where they paired "trump" with another highly misused tag – "christmas". Talk about a wild ride!
 
