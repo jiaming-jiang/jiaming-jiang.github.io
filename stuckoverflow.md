@@ -234,8 +234,8 @@ Now we have seen that although our approach did manage to detect the misuse of d
 
 
 ## Conclusion & Implication
-
+<div style="text-align: justify">
 In this work, we analyzed the behavior of tags, focusing on popularity and misuse. We saw that the average number of tags per video has increased over time, and certain tags are used more frequently together than others. We analyzed the interactions of tags with each other and identified tags gaining popularity. 
 <br>
-Even though adding excessive tags is against [YouTube's policies](https://support.google.com/youtube/answer/146402?hl=en-GB) on spam, deceptive practices and scams, our analysis showed that there is indeed a tag misuse problem. It has been found that tags on YouTube can be misused in order to manipulate the visibility of a video or to exploit trending topics. Given our data is not up-to-date, the validity of this claim should be investigated further for the current behavior of the users.
-
+Even though adding excessive tags is against <a href="https://support.google.com/youtube/answer/146402?hl=en-GB">YouTube's policies</a> on spam, deceptive practices and scams, our analysis showed that there is indeed a tag misuse problem. It has been found that tags on YouTube can be misused in order to manipulate the visibility of a video or to exploit trending topics. Given our data is not up-to-date, the validity of this claim should be investigated further for the current behavior of the users.
+</div>
