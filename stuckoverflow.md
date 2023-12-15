@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Trends on Tags 
+title: Unveil Character Dynamics
 subtitle: Discovering Tag Behaviour in YouTube
 cover-img: /assets/img/header_.png
 thumbnail-img: /assets/img/header_.png
