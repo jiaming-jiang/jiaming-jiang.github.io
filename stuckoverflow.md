@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Unveil Character Dynamics
-subtitle: Discovering Tag Behaviour in YouTube
-cover-img: /assets/img/header_.png
-thumbnail-img: /assets/img/header_.png
+subtitle: Discovering how characters interact in films
+cover-img: /assets/img/movie_header.jpg
+thumbnail-img: /assets/img/movie_header.jpg
 share-img: /assets/img/header_.png
 ---
 <div style="text-align: justify"> 
